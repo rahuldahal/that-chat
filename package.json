@@ -1,0 +1,18 @@
+{
+  "name": "that-chat",
+  "version": "0.1.0",
+  "description": "A nodejs backend that uses websockets for realtime communication",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc-watch ./src/app.ts --outDir ./build --onSuccess \"node ./build/app.js\""
+  },
+  "author": "Rahul Dahal",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.0",
+    "tsc-watch": "^4.5.0",
+    "typescript": "^4.5.4"
+  }
+}
