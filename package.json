@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src",
-    "dev": "tsc-watch ./src/app.ts --outDir ./build --onSuccess \"node ./build/app.js\""
+    "dev": "tsc-watch --esModuleInterop ./src/app.ts --outDir ./build --onSuccess \"node ./build/app.js\""
   },
   "author": "Rahul Dahal",
   "license": "MIT",
