@@ -1,8 +1,9 @@
-import { randomBytes } from 'crypto';
+import express from 'express';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-function sayHelloTo(name: string): string {
-  return `Hello, ${name}! How you doin'?`;
-}
+const app = express();
 
-console.log(sayHelloTo('Rahul Dahal'));
-console.log(randomBytes(64).toString('hex'));
+app.listen(process.env.PORT, () =>
+  console.log(`Server is listening on port ${process.env.PORT}`)
+);
