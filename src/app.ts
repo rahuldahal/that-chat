@@ -1,7 +1,7 @@
-import {randomBytes} from 'crypto';
+import { randomBytes } from 'crypto';
 
-function sayHelloTo(name: string):string {
-    return `Hello, ${name}! How you doin'?`;
+function sayHelloTo(name: string): string {
+  return `Hello, ${name}! How you doin'?`;
 }
 
 console.log(sayHelloTo('Rahul Dahal'));

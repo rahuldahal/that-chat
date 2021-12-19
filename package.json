@@ -5,14 +5,20 @@
   "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
     "dev": "tsc-watch ./src/app.ts --outDir ./build --onSuccess \"node ./build/app.js\""
   },
   "author": "Rahul Dahal",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@types/node": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.5.0",
     "tsc-watch": "^4.5.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "prettier": "^2.5.1"
   }
 }
